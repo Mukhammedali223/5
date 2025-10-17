@@ -1,6 +1,5 @@
 public class CheckoutFacade
 {
-    // Обеспечивает единый API: применить декораторы уже должен вызывающий код
     public static boolean processOrder(Cart cart,Customer cust,Payment payment)
     {
         System.out.println("=== Checkout for "+cust.getName()+" ===");
@@ -32,3 +31,4 @@ public class CheckoutFacade
         System.out.println("[Notify] sent to "+c.getName());
     }
 }
+
